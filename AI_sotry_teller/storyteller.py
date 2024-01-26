@@ -7,7 +7,7 @@ from face import capture_emotion
 
 
 
-client = OpenAI(api_key="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")
+client = OpenAI(api_key="")
 
 # Set page title and favicon
 st.set_page_config(page_title="Nexur.ai", page_icon=":book:")
