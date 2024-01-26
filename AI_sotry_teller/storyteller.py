@@ -122,34 +122,10 @@ if st.button("Generate Story"):
     else:
         st.warning("Please enter a prompt for the AI storyteller.")
 
-# # Display text and images if they have been generated
-# if hasattr(st.session_state, 'text_generated') and st.session_state.text_generated:
-#     st.subheader(f"**{user_input_title}**")
-#     st.write(st.session_state.generated_story)
 
-#     # Display images here if needed
-#     # ...
-
-# Button to play audio
-# if st.button("Play Audio") and hasattr(st.session_state, 'generated_story'):
-#     try:
-#         # Use OpenAI TTS for text-to-speech
-#         speech_response = client.audio.speech.create(
-#             model="tts-1",
-#             voice="echo",
-#             input=st.session_state.generated_story
-#         )
-#         # Play the generated speech within the website itself
-#         st.audio(speech_response.content, format="audio/mp3", start_time=0)
-
-#     except Exception as e:
-#         st.error(f"An error occurred during text-to-speech: {str(e)}")
-
-# Add a footer with attribution and link to OpenAI
 st.markdown("---")
 st.markdown("Built with :heart: by Nexus")
 
-# Add some styling to the app
 st.markdown(
     """
     <style>
