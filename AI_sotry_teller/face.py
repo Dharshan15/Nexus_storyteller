@@ -1,4 +1,4 @@
-# emotion_capture.py
+
 import asyncio
 import cv2
 from hume import HumeStreamClient, StreamSocket
